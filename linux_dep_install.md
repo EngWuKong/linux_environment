@@ -55,6 +55,7 @@ function install_docker_portainer_data(){
 }
 ```
 
-**remember open port 8000 and 9443 at your device
-**
+
+**remember open port 8000 and 9443 at your device**
+
 <img width="1912" alt="image" src="attachment/portainer_show.png">
