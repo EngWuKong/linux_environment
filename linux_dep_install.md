@@ -50,4 +50,4 @@ function install_docker_portainer_data(){
   docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.16.2
 }
 ```
-<img width="1912" alt="image" src="https://user-images.githubusercontent.com/129148097/231796165-b222097a-578f-409f-a04a-cbc30e8989b3.png">
+<img width="1912" alt="image" src="attachment/portainer_show.png">
