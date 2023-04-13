@@ -1,3 +1,7 @@
+
+
+
+
 # install base cmd
 ```
 sudo su 
@@ -50,4 +54,7 @@ function install_docker_portainer_data(){
   docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.16.2
 }
 ```
+
+remember open port 8000 and 9443 at your device
+
 <img width="1912" alt="image" src="attachment/portainer_show.png">
