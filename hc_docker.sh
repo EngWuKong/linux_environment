@@ -1,8 +1,9 @@
 
-apt-get remove docker docker-engine docker.io containerd runc
 
 
-function install_docker(){
+function hc_install_docker(){
+  apt-get remove docker docker-engine docker.io containerd runc
+
   # Update the apt package index and install packages to allow apt to use a repository over HTTPS:
   apt-get install \
     ca-certificates \
@@ -29,7 +30,7 @@ function install_docker(){
   newgrp docker
 }
 
-function install_docker_portainer_data(){
+function hc_install_docker_portainer_data(){
   docker volume create portainer_data
   docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.16.2
 }
